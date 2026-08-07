@@ -2,6 +2,13 @@
 <html lang="pt-br">
 
 <head>
+    <!-- Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonte do Google - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -13,7 +20,9 @@
 
     <meta name="robots" content="index, follow">
 
-    <link rel="icon" type="image/svg+html" href="./assets/img/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg">
+
+    <link rel="stylesheet" href="./assets/css/styles.css">
 
     <title>Portfólio do Felipe Lopes</title>
 </head>
@@ -21,19 +30,19 @@
 <body>
 
     <header>
-        <h1>Portfólio do Felipe Lopes</h1>
+        <div class="menu-content">
+            
+            <a href="index.html" id="titulo">Portfólio</a>
 
-        <a href="index.html" id="titulo">Portfólio</a>
-
-        <nav>
-            <ul>
-                <li><a href="#hero">Início</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-        </nav>
-
+            <nav>
+                <ul class="menu-list">
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -50,7 +59,7 @@
                 </div>
 
                 <figure class="hero-image">
-                    <img src="./assets/img/foto_dev_man.svg" alt="Foto do autor do site, Felipe Lopes" width="200px"
+                    <img src="./assets/img/foto_dev_man.svg" alt="Foto do autor do site, Felipe Lopes"
                         class="float-animation">
                 </figure>
 
@@ -58,18 +67,19 @@
         </section>
 
         <section id="about" class="section-container about-container">
+
             <figure class="about-image">
-                <img src="./assets/img/avatar_dev_man.svg" alt="Foto do autor do site, Felipe Lopes" width="200px">
+                <img src="./assets/img/avatar_dev_man.svg" alt="Foto do autor do site, Felipe Lopes">
             </figure>
 
-            <article class="about-text">
+            <article class="about-content">
                 <!-- Links (GitHub + Curriculo) e Dados do GitHub  -->
                 <div class="about-buttons-data">
 
                     <!-- Links -->
                     <div class="buttons-container">
-                        <a href="#" target="_blank" class="botao">GitHub</a>
-                        <a href="#" target="_blank" class="botao-outline">Currículo</a>
+                        <a href="#" target="_blank" class="button">GitHub</a>
+                        <a href="#" target="_blank" class="button-outline">Currículo</a>
                         <!-- O target blank significa que vai abrir uma nova guia -->
                     </div>
 
@@ -108,7 +118,7 @@
 
                             <!-- Ícone da Tecnologia padrão do projeto -->
                             <figure class="project-image">
-                                <img src="./assets/icons/languages/github.svg" width="50px" alt="Ícone do GitHub">
+                                <img src="./assets/icons/languages/github.svg" alt="Ícone do GitHub">
                             </figure>
 
                             <!-- Conteúdo do Projeto -->
@@ -124,10 +134,10 @@
 
                                 <!-- Links do Projeto -->
                                 <div class="project-buttons">
-                                    <a href="#" target="_blank" class="botao botao-sm">
+                                    <a href="#" target="_blank" class="button button-sm">
                                         GitHub
                                     </a>
-                                    <a href="#" target="_blank" class="botao-outline botao-sm">
+                                    <a href="#" target="_blank" class="button-outline button-sm">
                                         Deploy
                                     </a>
                                 </div>
@@ -153,7 +163,7 @@
 
         <section id="contact" class="section-container contact-container">
 
-            <article>
+            <article class="contact-info">
 
                 <h2>Entre em Contato</h2>
                 <p>Sinta-se à vontade para entrar em contato comigo</p>
