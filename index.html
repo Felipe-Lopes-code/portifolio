@@ -22,7 +22,10 @@
 
     <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg">
 
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="./assets/css/alter_styles.css">
 
     <title>Portfólio do Felipe Lopes</title>
 </head>
@@ -31,7 +34,7 @@
 
     <header>
         <div class="menu-content">
-            
+
             <a href="index.html" id="titulo">Portfólio</a>
 
             <nav>
@@ -48,59 +51,25 @@
     <main>
         <section id="hero" class="section-container hero-container">
 
-            <article>
+            <article class="hero-content">
 
                 <span>Olá, meu nome é Felipe Lopes</span>
                 <h1>Sou um desenvolvedor Full Stack</h1>
                 <p>Bem-vindo ao meu portfólio pessoal. Aqui você encontrará meus projetos e informações de contato.</p>
                 <div class="buttons-container">
-                    <a href="#contact">Entre em contato</a>
+                    <a href="#contact" class="button-outline">Entre em contato</a>
                     <a href="#about" class="button-outline">Saiba mais...</a>
                 </div>
 
-                <figure class="hero-image">
-                    <img src="./assets/img/foto_dev_man.svg" alt="Foto do autor do site, Felipe Lopes"
-                        class="float-animation">
-                </figure>
-
             </article>
+
+            <figure class="hero-image">
+                <img src="./assets/img/foto_dev_man.svg" alt="Foto do autor do site, Felipe Lopes"
+                    class="float-animation">
+            </figure>
         </section>
 
         <section id="about" class="section-container about-container">
-
-            <figure class="about-image">
-                <img src="./assets/img/avatar_dev_man.svg" alt="Foto do autor do site, Felipe Lopes">
-            </figure>
-
-            <article class="about-content">
-                <!-- Links (GitHub + Curriculo) e Dados do GitHub  -->
-                <div class="about-buttons-data">
-
-                    <!-- Links -->
-                    <div class="buttons-container">
-                        <a href="#" target="_blank" class="button">GitHub</a>
-                        <a href="#" target="_blank" class="button-outline">Currículo</a>
-                        <!-- O target blank significa que vai abrir uma nova guia -->
-                    </div>
-
-                    <!-- Dados do repositorio do GitHub -->
-                    <div class="data-conteiner">
-
-                        <!-- Número de Seguidores -->
-                        <div class="data-item">
-                            <span class="data-number">100</span>
-                            <span class="data-label">Seguidores</span>
-                        </div>
-
-                        <!-- Número de Repositórios Públicos -->
-                        <div class="data-item">
-                            <span class="data-number">10</span>
-                            <span class="data-label">Repositórios</span>
-                        </div>
-                    </div>
-
-                </div>
-            </article>
 
         </section>
 
@@ -112,50 +81,13 @@
             <div class="swiper projects-swiper">
                 <div class="swiper-wrapper">
 
-                    <figure class="swiper-slide">
-
-                        <article class="project-card">
-
-                            <!-- Ícone da Tecnologia padrão do projeto -->
-                            <figure class="project-image">
-                                <img src="./assets/icons/languages/github.svg" alt="Ícone do GitHub">
-                            </figure>
-
-                            <!-- Conteúdo do Projeto -->
-                            <div class="project-content">
-
-                                <h3>Projeto GitHub</h3>
-                                <p>Projeto desenvolvido no GitHub</p>
-
-                                <!-- Tags do Projeto -->
-                                <div class="project-tags">
-                                    <span class="tag">GitHub</span>
-                                </div>
-
-                                <!-- Links do Projeto -->
-                                <div class="project-buttons">
-                                    <a href="#" target="_blank" class="button button-sm">
-                                        GitHub
-                                    </a>
-                                    <a href="#" target="_blank" class="button-outline button-sm">
-                                        Deploy
-                                    </a>
-                                </div>
-
-                            </div>
-
-                        </article>
-
                 </div>
-
-            </div>
-
             <!-- Botões de Navegação -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
 
             <!-- Paginação -->
-            <div class="swiper-pagination"></div>
+                <div class="swiper-pagination"></div>
 
             </div>
 
@@ -181,7 +113,10 @@
                 </div>
             </article>
 
-            <form id="formulario">
+            <form id="formulario" action="https://formsubmit.co/4aca6e06ee63559c2962ca36fed3d85a" method="POST">
+
+                <input type="hidden" name="_next" value="https://localhost:5500/success.html">
+                <input type="hidden" name="_captcha" value="false">
 
                 <label for="nome">Nome:</label>
                 <input id="nome" name="nome" type="text" placeholder="Digite o seu nome completo">
@@ -209,6 +144,11 @@
     <footer>
         <p>&copy; 2026 Felipe Lopes. Todos os direitos reservados.</p>
     </footer>
+
+    <!-- SWIPER JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="./assets/js/script.js"></script>
 
 </body>
 
