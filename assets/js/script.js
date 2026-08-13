@@ -42,7 +42,7 @@ async function getAboutGithub() {
                         <!-- Links -->
                         <div class="buttons-container">
                             <a href="${perfil.html_url}" target="_blank" class="button">GitHub</a>
-                            <a href="#" target="_blank" class="button-outline">Currículo</a>
+                            <a href="./assets/docs/curriculo_devFullStack_felipeLopes.pdf" target="_blank" rel="noopener noreferrer" class="button-outline">Currículo</a>
                             <!-- O target blank significa que vai abrir uma nova guia -->
                         </div>
 
@@ -127,12 +127,12 @@ async function getProjectsGithub() {
                 ? repositorio.topics.slice(0, 3).map(topic => `<span class="tag">${topic}</span>`).join('')
                 : `<span class="tag">${linguagem}</span>`;
 
-            const botaoDeploy = repositorio.homepage ? `<a href="${repositorio.homepage}" target="_blank" class="botao-outline botao-sm">Deploy</a>` : '';
+            const botaoDeploy = repositorio.homepage ? `<a href="${repositorio.homepage}" target="_blank" class="button-outline button-sm">Deploy</a>` : '';
 
             // Botões de ação
             const botoesAcao = `
                 <div class="project-buttons">
-                    <a href="${repositorio.html_url}" target="_blank" class="botao botao-sm">
+                    <a href="${repositorio.html_url}" target="_blank" class="button button-sm">
                                 GitHub
                     </a>
                             ${botaoDeploy}

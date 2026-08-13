@@ -297,6 +297,11 @@ header a:hover {
     text-align: justify;
 }
 
+.about-content h2 {
+    padding: var(--spacing-md);
+    
+}
+
 /* Container de Botões + Estatísticas */
 .about-buttons-data {
     display: flex;
@@ -336,24 +341,6 @@ header a:hover {
     color: var(--gray-400);
 }
 
-/* Responsividade (Telas menores) */
-
-/*
-@media (max-width: 768px) {
-    .about-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .about-buttons-data {
-        align-items: center;
-    }
-
-    .data-container {
-        justify-content: center;
-    }
-}
-*/
 
 /* projects */
 
@@ -446,10 +433,10 @@ header a:hover {
 
 .project-buttons {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     gap: 0.75rem;
     margin-top: var(--spacing-sm);
+    border-radius: var(--radius-sm);
 }
 
 /* Configuração do Swiper */
@@ -557,9 +544,7 @@ header a:hover {
 }
 
 .social-icon img:hover {
-
-    filter: brightness(0) saturate(100%) invert(42%) sepia(93%) saturate(1352%) hue-rotate(243deg) brightness(79%) contrast(91%);
-
+    filter: brightness(0) saturate(100%) invert(27%) sepia(16%) saturate(553%) hue-rotate(33deg) brightness(86%) contrast(80%);
 }
 
 /* formulário */
@@ -667,19 +652,6 @@ footer {
     margin-top: var(--spacing-sm);
 }
 
-/* Responsividade para telas menores */
-/*
-@media (max-width: 480px) {
-    .success-content {
-        padding: var(--spacing-xl) var(--spacing-md);
-    }
-
-    .success-content h1 {
-        font-size: var(--text-xl);
-    }
-}
-*/
-
 @media screen and (max-width: 1024px) {
 
     .section-container {
@@ -714,6 +686,20 @@ footer {
         .menu-list {
             display: none;
         }
+
+        .about-container {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .about-buttons-data {
+            align-items: center;
+        }
+
+        .data-container {
+            justify-content: center;
+        }
+
     }
 
     .hero-container {
@@ -765,6 +751,10 @@ footer {
 
     .about-content {
         width: 100%;
+    }
+
+    .about-content h2 {
+        text-align: center;
     }
 
     .about-buttons-data {
