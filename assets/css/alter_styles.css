@@ -98,7 +98,7 @@ main {
 
 .button,
 .button-outline {
-    display: inline-block;
+    display: flex;
     padding: 0.75rem 2rem;
     border: 0.15rem solid transparent;
     border-radius: var(--radius-md);
@@ -109,18 +109,6 @@ main {
     transition: var(--transition-default);
 }
 
-.button {
-    border-color: var(--color-olive-leaf-700);
-    background-color: var(--color-olive-leaf-500);
-    color: var(--white);
-}
-
-.button:hover {
-    border-color: var(--color-olive-leaf-800);
-    background-color: var(--color-olive-leaf-700);
-    box-shadow: var(--shadow-md);
-    transform: translateY(-0.25rem);
-}
 
 .button-outline {
     border-color: var(--color-olive-leaf-700);
@@ -433,6 +421,7 @@ header a:hover {
 
 .project-buttons {
     display: flex;
+    justify-content: center;
     text-align: center;
     gap: 0.75rem;
     margin-top: var(--spacing-sm);
